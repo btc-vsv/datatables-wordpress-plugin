@@ -5,7 +5,7 @@
  * @wordpress-plugin
  * Plugin Name:       DataTables
  * Description:       DataTables integration.
- * Version:           1.0.0
+ * Version:           0.0.1
  * Author:            donvardix
  * Author URI:        https://t.me/donvardix
  * License:           GPL-2.0+
@@ -28,7 +28,7 @@ class DataTables
         }
 
         // setup variables
-        define( 'DATATABLES_VERSION', '1.0.0' );
+        define( 'DATATABLES_VERSION', '0.0.1' );
         define( 'DATATABLES_DIR', dirname( __FILE__ ) );
         define( 'DATATABLES_FILE', __FILE__ );
 
