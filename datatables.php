@@ -5,7 +5,7 @@
  * @wordpress-plugin
  * Plugin Name:       DataTables
  * Description:       DataTables integration.
- * Version:           0.0.1
+ * Version:           0.0.2
  * Author:            donvardix
  * Author URI:        https://t.me/donvardix
  * License:           GPL-2.0+
@@ -28,7 +28,7 @@ class DataTables
         }
 
         // setup variables
-        define( 'DATATABLES_VERSION', '0.0.1' );
+        define( 'DATATABLES_VERSION', '0.0.2' );
         define( 'DATATABLES_DIR', dirname( __FILE__ ) );
         define( 'DATATABLES_FILE', __FILE__ );
 
@@ -50,7 +50,7 @@ class DataTables
      * Require PHP 5.6+
      */
     function upgrade_notice() {
-        $message = __( 'DataTables requires PHP %s or above. Please contact your host and request a PHP upgrade.', 'datatables' );
+        $message = esc_html__( 'DataTables requires PHP %s or above. Please contact your host and request a PHP upgrade.', 'datatables' );
         echo '<div class="error"><p>' . sprintf( $message, '5.6' ) . '</p></div>';
     }
 }
